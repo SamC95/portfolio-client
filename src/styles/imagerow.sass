@@ -1,0 +1,22 @@
+.image-row
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 20px
+  padding: 20px
+  background-color: #121212
+
+  img
+    width: 125px
+    height: auto
+    border-radius: 10px
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+
+    &:hover
+      transform: scale(1.1)
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15)
+
+    @media (max-width: 768px)
+      flex-wrap: wrap
+      justify-content: center
