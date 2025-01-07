@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "@/styles/globals.css";
 import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({
+    variable: "--font-montserrat",
+    subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
     title: "Sam Clark Portfolio",
@@ -30,8 +25,7 @@ export default function RootLayout({
         <meta name={"description"} content={metadata.description ?? "Default description"} />
     </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${montserrat.className} antialiased`}>
         {children}
       </body>
     </html>
