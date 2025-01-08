@@ -5,7 +5,7 @@ import "../styles/imagerow.sass"
 import "../styles/sectionheader.sass"
 import Header from "@/app/components/header/header";
 import {useEffect, useState} from "react";
-import placeholder from "../images/placeholder.jpg"
+import placeholder from "../images/kat.png"
 import Image from "next/image";
 
 export default function Home() {
@@ -88,19 +88,19 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={'hero-image'}>
-                        <Image src={placeholder} alt={"placeholder image"}/>
+                        <Image src={placeholder} className={"image"} alt={"placeholder image"}/>
                     </div>
                 </div>
             </div>
 
-            <div className="section">
+            <div className={`section ${isLoaded ? 'loaded' : ''}`}>
                 <h1>
-                    <span>Technologies Used</span>
+                    <span>What I&#39;ve been working with!</span>
                 </h1>
                 <div className={"section-underline"}></div>
             </div>
 
-            <div className={"image-row"}>
+            <div className={`image-row ${isLoaded ? 'loaded' : ''}`}>
                 <h1>
                     <span>Front End</span>
                 </h1>
@@ -120,7 +120,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className={"image-row"}>
+            <div className={`image-row ${isLoaded ? 'loaded' : ''}`}>
                 <h1>
                     <span>Back End</span>
                 </h1>

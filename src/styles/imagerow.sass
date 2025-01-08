@@ -11,7 +11,12 @@
   align-items: center
   gap: 20px
   padding: 20px
+  opacity: 0
   background-color: #0a0a0a
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out
+
+  &.loaded
+    opacity: 1
 
   h1
     font-size: 1.5rem
@@ -29,6 +34,7 @@
 
   .image-container
     position: relative
+    overflow: hidden
     width: 125px
     height: 500px
 
@@ -38,6 +44,7 @@
     white-space: nowrap
     width: 880px
     position: relative
+    clip-path: inset(0 0 0 0)
 
     &::before,
     &::after
@@ -74,6 +81,16 @@
         transform: scale(1.1)
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15)
 
-  @media (max-width: 768px)
+  @media (max-width: 636px)
     flex-wrap: wrap
     justify-content: center
+    padding: 10px
+
+    .image-wrapper
+      width: 100%
+
+      @keyframes slide
+        from
+          transform: translateX(0%)
+        to
+          transform: translateX(-143%)

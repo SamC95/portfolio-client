@@ -15,7 +15,28 @@
 }
 
 body {
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a0a0a;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 5px;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background: #00cc77; /* Change color on hover */
 }
