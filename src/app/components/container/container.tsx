@@ -22,7 +22,7 @@ const Container: React.FC<ContainerProps> = ({title, grade, location, duration, 
                     <li key={index}>{point}</li>
                 ))}
             </ul>
-
+            <br/>
             <p>{duration}</p>
         </div>
     );
