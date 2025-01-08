@@ -1,0 +1,32 @@
+.container
+  align-items: center
+  padding: 20px
+  background-color: #171717
+  border-radius: 8px
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1)
+  max-width: 1000px
+  width: 100%
+  margin-bottom: 30px
+  margin-left: auto
+  margin-right: auto
+  transform: translateY(50%)
+  opacity: 0
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out
+
+  &.loaded
+    transform: translateY(0)
+    opacity: 1
+
+  h1
+    font-size: 24px
+    color: #00ff88
+
+  p
+    font-size: 16px
+    color: #aaaaaa
+
+  .bulletPoints
+    list-style-type: disc
+    margin-left: 50px
+    font-size: 16px
+    color: #aaaaaa
