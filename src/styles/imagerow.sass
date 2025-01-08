@@ -1,22 +1,79 @@
+@keyframes slide
+  from
+      transform: translateX(0%)
+  to
+      transform: translateX(-100%)
+
 .image-row
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
   gap: 20px
   padding: 20px
-  background-color: #121212
+  background-color: #0a0a0a
 
-  img
+  h1
+    font-size: 1.5rem
+    line-height: 1.2
+    font-family: var(--monospace-font), Arial, sans-serif
+
+    span
+      color: #00ff88
+
+  .header-underline
+    width: 300px
+    height: 4px
+    background-color: #00ff88
+    margin: 20px auto 20px
+
+  .image-container
+    position: relative
     width: 125px
-    height: auto
-    border-radius: 10px
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
-    transition: transform 0.3s ease, box-shadow 0.3s ease
+    height: 500px
+
+  .image-wrapper
+    overflow: hidden
+    padding: 30px 0
+    white-space: nowrap
+    width: 880px
+    position: relative
+
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      width: 250px
+      height: 100%
+      z-index: 2
+
+    &::before
+      left: 0
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #0a0a0a)
+
+    &::after
+      right: 0
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #0a0a0a)
+
+  .image-logos
+    display: inline-flex
+    animation: slide 25s infinite linear
 
     &:hover
-      transform: scale(1.1)
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15)
+      animation-play-state: paused
 
-    @media (max-width: 768px)
-      flex-wrap: wrap
-      justify-content: center
+    img
+      height: 100px
+      border-radius: 10px
+      padding-right: 10px
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+      transition: transform 0.3s ease, box-shadow 0.3s ease
+
+      &:hover
+        transform: scale(1.1)
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15)
+
+  @media (max-width: 768px)
+    flex-wrap: wrap
+    justify-content: center
