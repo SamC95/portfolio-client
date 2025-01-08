@@ -1,6 +1,7 @@
 'use client'
 
 import Header from "@/app/components/header/header";
+import Footer from "@/app/components/footer/footer";
 import '../qualifications/qualifications.sass'
 import {useEffect, useState} from "react";
 import Container from "@/app/components/container/container";
@@ -67,6 +68,7 @@ export default function Qualifications() {
                     Nothing just yet!
                 </p>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -4,6 +4,7 @@ import "../styles/landing.sass"
 import "../styles/imagerow.sass"
 import "../styles/sectionheader.sass"
 import Header from "@/app/components/header/header";
+import Footer from "@/app/components/footer/footer";
 import {useEffect, useState} from "react";
 import placeholder from "../images/kat.png"
 import Image from "next/image";
@@ -107,6 +108,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }
