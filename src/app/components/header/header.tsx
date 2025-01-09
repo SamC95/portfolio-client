@@ -1,11 +1,16 @@
 import React from "react";
 import "./header.sass";
+import Link from "next/link";
 
 const Header: React.FC = () => {
     return (
         <header className={"header"}>
             <div className={"logo"}>
-                <span>&lt;/&gt;</span> Sam Clark
+                <Link href="/">
+                    <span className={"html"}>&lt;</span>
+                    <span className={"name"}> Sam Clark </span>
+                    <span className={"html"}>/&gt;</span>
+                </Link>
             </div>
             <nav className={"nav"}>
                 <ul>

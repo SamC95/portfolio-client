@@ -8,12 +8,29 @@
   font-family: var(--font-montserrat), Arial, sans-serif
 
   .logo
+    display: flex
+    align-items: center
+    gap: 0.5rem
     font-size: 1.5rem
-    font-weight: bold
     color: #00ff88
+    transition: color 0.3s ease-in-out
+    cursor: pointer
+    white-space: nowrap
 
-    span
+    .name
+      transition: color 0.3s ease-in-out
+
+    .html
       color: #ffffff
+      transition: color 0.3s ease-in-out
+      margin: 0
+      padding: 0
+
+    &:hover
+      .html
+        color: #00ff88
+      .name
+        color: #ff6600
 
   .nav
     ul

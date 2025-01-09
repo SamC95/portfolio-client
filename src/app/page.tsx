@@ -47,7 +47,7 @@ export default function Home() {
                                 <p>Years Experience</p>
                             </div>
                             <div>
-                                <h2>5+</h2>
+                                <h2>10+</h2>
                                 <p>Projects Completed</p>
                             </div>
                             <div>
