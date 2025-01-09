@@ -16,8 +16,8 @@ import {
     MealDatabase,
     DiceGame
 } from './posts/projects'
-import ProjectContainer from "@/app/components/project-container/projectContainer";
-import '../components/project-container/projectContainer.sass'
+import ProjectContainer from "@/app/components/project-container/project-container";
+import '../components/project-container/project-container.sass'
 
 export default function Projects() {
     const [isLoaded, setIsLoaded] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import './projectContainer.sass'
+import './project-container.sass'
 
 interface ProjectContainerProps {
     title: string

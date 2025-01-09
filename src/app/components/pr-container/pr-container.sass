@@ -1,0 +1,70 @@
+.container
+  max-width: 800px
+  min-height: 73vh
+  margin: 0 auto
+  padding: 20px
+
+h1
+  font-size: 2rem
+  margin-bottom: 20px
+
+.pull-request
+  display: flex
+  align-items: flex-start
+  padding: 15px
+  border: 1px solid #2C2C2C
+  border-radius: 6px
+  margin-bottom: 15px
+  background-color: #171717
+  font-size: var(--montserrat-font)
+
+.pull-request .avatar
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  margin-right: 15px
+
+.pull-request .content
+  flex: 1
+
+.pull-request .title
+  font-size: 1rem
+  font-weight: bold
+  color: #00ff88
+  text-decoration: none
+  transition: color 0.3s ease
+
+.pull-request .title:hover
+  color: #ff6600
+
+.pull-request .meta
+  font-size: 0.875rem
+  color: #aaaaaa
+  margin-top: 5px
+
+  .profileLink
+    transition: color 0.3s ease
+
+  .profileLink:hover
+    color: #00ff88
+
+.pull-request .state
+  display: inline-block
+  font-size: 0.75rem
+  font-weight: bold
+  text-transform: uppercase
+  padding: 2px 6px
+  border-radius: 4px
+  margin-top: 10px
+
+.pull-request .state.open
+  color: white
+  background-color: #238636
+
+.pull-request .state.closed
+  color: white
+  background-color: #da3633
+
+.pull-request .state.merged
+  color: white
+  background-color: #8957e5

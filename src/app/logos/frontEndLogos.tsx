@@ -6,6 +6,7 @@ export const frontEndLogos = [
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {src: '/icons/react/react-original-wordmark.svg', alt: 'React', link: "https://react.dev/"},
+    {src: '/icons/electron/electron-original.svg', alt: 'Electron', link: "https://www.electronjs.org/"},
     {src: '/icons/nextjs/nextjs-original.svg', alt: 'NextJS', link: "https://nextjs.org/"},
     {
         src: '/icons/html5/html5-plain-wordmark.svg',
