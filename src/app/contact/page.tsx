@@ -1,13 +1,81 @@
+'use client'
+
 import Header from "@/app/components/header/header";
 import Footer from "@/app/components/footer/footer";
-
+import '../../styles/sectionheader.sass'
+import './contact.sass'
+import PhoneSVG from '../../../public/contact-icons/icons8-phone-50.png'
+import EmailSVG from '../../../public/contact-icons/icons8-email-50.png'
+import GithubSVG from '../../../public/contact-icons/icons8-github-50.png'
+import LinkedInSVG from '../../../public/contact-icons/icons8-linkedin-circled-50.png'
+import WhatsAppSVG from '../../../public/contact-icons/icons8-whatsapp-50.png'
+import {useState, useEffect} from "react";
+import Image from 'next/image'
 
 export default function Contact() {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoaded(true);
+        }, 100);
+        return () => clearTimeout(timer);
+    }, [])
+
     return (
         <>
             <Header/>
 
-            <h1>Contact Me</h1>
+            <div className={`section-push ${isLoaded ? 'loaded' : ''}`}>
+                <div className={`section ${isLoaded ? 'loaded' : ''}`}>
+                    <h1>
+                        <span>Contact Me!</span>
+                    </h1>
+                    <div className={"section-underline"}></div>
+                </div>
+                <p className={isLoaded ? 'loaded' : ''}>I&#39;d love to hear from you!</p>
+                <p className={isLoaded ? 'loaded' : ''}>Reach out using the information below</p>
+
+                <div className={`contact-details ${isLoaded ? 'loaded' : ''}`}>
+                    <div className="detail-item">
+                        <Image src={PhoneSVG} alt="Phone Icon" className="icon"/>
+                        <a href="tel:+447981339346">+44 7981 339346</a>
+                    </div>
+                    <div className="detail-item">
+                        <Image src={EmailSVG} alt="Email Icon" className="icon"/>
+                        <a href="mailto:sam.clark48@hotmail.co.uk">Sam.clark48@hotmail.co.uk</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <p className={isLoaded ? 'loaded' : ''}>Socials</p>
+                <div className="social-icons">
+                    <a
+                        href="https://wa.me/447981339346" // WhatsApp link with your phone number
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`icon ${isLoaded ? 'fade-in delay-1' : ''}`}
+                    >
+                        <Image src={WhatsAppSVG} alt="WhatsApp Icon" width={50} height={50}/>
+                    </a>
+                    <a
+                        href="https://github.com/SamC95"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`icon ${isLoaded ? 'fade-in delay-2' : ''}`}
+                    >
+                        <Image src={GithubSVG} alt="GitHub Icon" width={50} height={50}/>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/sam-clark-23451730b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`icon ${isLoaded ? 'fade-in delay-3' : ''}`}
+                    >
+                        <Image src={LinkedInSVG} alt="LinkedIn Icon" width={50} height={50}/>
+                    </a>
+                </div>
+            </div>
 
             <Footer/>
         </>

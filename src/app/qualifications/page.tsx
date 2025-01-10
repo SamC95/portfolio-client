@@ -57,17 +57,17 @@ export default function Qualifications() {
                         Download
                     </a>
                 </div>
+                {/*Not enabled at the moment*/}
+                {/*<div className={`section ${isLoaded ? 'loaded' : ''}`}>*/}
+                {/*    <h1>*/}
+                {/*        <span>Certificates</span>*/}
+                {/*    </h1>*/}
+                {/*    <div className={"section-underline"}></div>*/}
 
-                <div className={`section ${isLoaded ? 'loaded' : ''}`}>
-                    <h1>
-                        <span>Certificates</span>
-                    </h1>
-                    <div className={"section-underline"}></div>
-
-                    <p>
-                        Nothing just yet!
-                    </p>
-                </div>
+                {/*    <p>*/}
+                {/*        Nothing just yet!*/}
+                {/*    </p>*/}
+                {/*</div>*/}
             </div>
             <Footer/>
         </>
