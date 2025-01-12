@@ -1,4 +1,4 @@
-// Uncomment this import if using authorization
+// Uncomment this import for authorization
 // import config from "../../../../config.json"
 
 interface PullRequestResponse {
@@ -18,7 +18,6 @@ export async function fetchPullRequests(username: string): Promise<PullRequestRe
         const response = await fetch(endpoint, { headers });
         const remaining = response.headers.get('X-RateLimit-Remaining');
         if (remaining === '0') {
-            console.log('reached here')
             return { items: [], rateLimitReached: true }
         }
 
