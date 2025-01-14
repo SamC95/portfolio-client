@@ -6,10 +6,10 @@ import "../styles/sectionheader.sass"
 import Header from "@/app/components/header/header";
 import Footer from "@/app/components/footer/footer";
 import {useEffect, useState} from "react";
-import placeholder from "../images/kat.png"
 import Image from "next/image";
 import { frontEndLogos } from "@/app/logos/frontEndLogos";
 import { backEndLogos } from "@/app/logos/backEndLogos";
+// import placeholder from "../images/placeholder.jpg"
 
 export default function Home() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -56,9 +56,9 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className={'hero-image'}>
+                    {/*<div className={'hero-image'}>
                         <Image src={placeholder} className={"image"} alt={"placeholder image"}/>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
 

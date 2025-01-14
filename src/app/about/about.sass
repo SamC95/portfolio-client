@@ -1,0 +1,64 @@
+.section-push
+  margin-top: 100px
+  min-height: 85vh
+
+  .intro, .hobbies
+    display: flex
+    justify-content: center
+    padding-right: 200px
+    position: relative
+    margin: auto
+    opacity: 0
+    transform: translateX(-100px)
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out
+
+    &.loaded
+      opacity: 1
+      transform: translateX(0)
+
+  p
+    text-align: center
+    color: #aaaaaa
+    font-size: 1.08rem
+    max-width: 600px
+
+  .experience
+    display: flex
+    justify-content: center
+    padding-left: 200px
+    position: relative
+    margin: auto
+    opacity: 0
+    transform: translateX(100px)
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out
+
+    &.loaded
+      opacity: 1
+      transform: translateX(0)
+
+  .underline
+    display: flex
+    justify-content: center
+    padding-left: 200px
+    position: relative
+    margin: 50px auto
+    width: 300px
+    height: 4px
+    background-color: #00ff88
+    opacity: 0
+    transform: translateX(100px)
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out
+
+    &.loaded
+      opacity: 1
+      transform: translateX(0)
+
+  @media (max-width: 768px)
+    .intro
+      padding-right: 0
+
+    .experience
+      padding-left: 0
+
+    .hobbies
+      padding-right: 0

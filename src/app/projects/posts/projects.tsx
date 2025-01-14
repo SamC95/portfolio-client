@@ -46,6 +46,15 @@ export const NewsScraper = {
     url: "https://github.com/SamC95/news-scraper"
 }
 
+export const Portfolio = {
+    title: "Portfolio Website",
+    image: "/projects/portfolio.png",
+    description: "Portfolio website highlighting my experience and projects",
+    language: "TypeScript, Next.js",
+    year: `2025`,
+    url: "https://github.com/SamC95"
+}
+
 export const DigitalStore = {
     title: "Final Year Project",
     image: "/projects/digitalstore.png",

@@ -14,7 +14,7 @@ import {
     L2JServerAPI,
     L2JClientDatabase,
     MealDatabase,
-    DiceGame
+    DiceGame, Portfolio
 } from './posts/projects'
 import ProjectContainer from "@/app/components/project-container/project-container";
 import '../components/project-container/project-container.sass'
@@ -34,6 +34,7 @@ export default function Projects() {
         L2JServerAPI,
         MochiBot,
         NewsScraper,
+        Portfolio,
         NewsappKotlin,
         DigitalStore,
         WeatherApp,
