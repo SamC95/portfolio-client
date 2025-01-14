@@ -52,7 +52,7 @@ export const Portfolio = {
     description: "Portfolio website highlighting my experience and projects",
     language: "TypeScript, Next.js, Sass",
     year: `2025`,
-    url: "https://github.com/SamC95"
+    url: "https://github.com/SamC95/portfolio-client"
 }
 
 export const DigitalStore = {
