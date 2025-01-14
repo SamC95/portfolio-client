@@ -5,7 +5,7 @@ export const L2JClientDatabase = {
     title: "L2J Database",
     image: "/projects/l2j-client-db.png",
     description: "Co-development of a database website for L2J that utilises the server API project",
-    language: "TypeScript, Next.js",
+    language: "TypeScript, Next.js, Bootstrap",
     year: `2024-${currentYear}`,
     url: "https://github.com/SamC95"
 }
@@ -50,7 +50,7 @@ export const Portfolio = {
     title: "Portfolio Website",
     image: "/projects/portfolio.png",
     description: "Portfolio website highlighting my experience and projects",
-    language: "TypeScript, Next.js",
+    language: "TypeScript, Next.js, Sass",
     year: `2025`,
     url: "https://github.com/SamC95"
 }
@@ -59,7 +59,7 @@ export const DigitalStore = {
     title: "Final Year Project",
     image: "/projects/digitalstore.png",
     description: "Digital eCommerce & Games Media Application. Developed in Electron.js",
-    language: "TypeScript, React, Node.js",
+    language: "TypeScript, React, Node.js, CSS",
     year: '2023-2024',
     url: "https://github.com/SamC95/digitalstore-finalproject"
 }
@@ -76,7 +76,7 @@ export const WeatherApp = {
 export const AsteroidsGame = {
     title: "Asteroids Game",
     image: "/projects/asteroidsgame.png",
-    description: "Year 3 University Coursework - Formal Methods: Asteroids Game in ProB / AtelierB",
+    description: "Year 3 University Coursework - Formal Methods: Asteroids Game",
     language: "ProB, AtelierB",
     year: '2023-2024',
     url: "https://github.com/SamC95/asteroidsgame-bmachine"
