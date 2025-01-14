@@ -48,7 +48,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <h2>10+</h2>
-                                <p>Projects Completed</p>
+                                <p>Projects</p>
                             </div>
                             <div>
                                 <h2>25+</h2>
