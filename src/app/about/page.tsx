@@ -53,8 +53,8 @@ export default function About() {
                         me and allow me to harness and expand on prior experience.
                         <br/>
                         <br/>
-                        This includes both solo and co-development projects which have allowed me to gain experience
-                        in design patterns, continuous integration techniques, semantic versioning, conventional
+                        This includes both solo and co-development projects which have allowed me to gain knowledge
+                        on design patterns, continuous integration techniques, semantic versioning, conventional
                         commits,
                         pull requests and more.
                     </p>
