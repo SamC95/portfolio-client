@@ -63,7 +63,7 @@ export default function About() {
 
                 <div className={`hobbies ${isLoaded ? 'loaded' : ''}`}>
                     <p>
-                        When I&#39;m not working on projects, I have keen interests in reading, the gym, technology and video games; the latter of which often serves
+                        When I&#39;m not working on projects, I have keen interests in music, technology and video games; the latter of which often serves
                         as inspiration for my project ideas, solving specific needs or use-cases that I find interesting
                         within the space.
                         <br/>
