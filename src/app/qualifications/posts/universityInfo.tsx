@@ -6,7 +6,7 @@ export const universityInfo = {
     points: [
         'Developed several projects using Java, Kotlin, Swift, React.js & more',
         'Achieved high marks across all modules',
-        'Overall final grade of 78%',
+        'Overall final grade of 77%',
         'Student Member of the British Computing Society (BCS)'
     ]
 };
