@@ -53,7 +53,7 @@ export default function Qualifications() {
 
                 <div className={`downloadLink ${isLoaded ? 'loaded' : ''}`}>
                     <p>See my full resume</p>
-                    <a href={"/cv/cv-jan-2025.pdf"} download className={"downloadButton"}>
+                    <a href={"/cv/cv-feb-2025.pdf"} download className={"downloadButton"}>
                         Download
                     </a>
                 </div>

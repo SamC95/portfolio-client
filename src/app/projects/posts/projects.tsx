@@ -31,9 +31,9 @@ export const NewsappKotlin = {
 export const MochiBot = {
     title: "Mochi Bot",
     image: "/projects/mochibot.png",
-    description: "Discord game news bot using Discord4J & Google Firestore",
+    description: "Discord game news bot using Discord4J & MySQL",
     language: "Java",
-    year: `2024-2025`,
+    year: `2024-${currentYear}`,
     url: "https://github.com/SamC95"
 }
 
@@ -42,7 +42,7 @@ export const NewsScraper = {
     image: "/projects/news-scraper.png",
     description: "Web scraper for video game news & updates using Jsoup, designed for use with Mochi Bot",
     language: "Java",
-    year: `2024-2025`,
+    year: `2024-${currentYear}`,
     url: "https://github.com/SamC95/news-scraper"
 }
 
