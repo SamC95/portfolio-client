@@ -1,6 +1,15 @@
 const currentDate = new Date()
 const currentYear = currentDate.getFullYear()
 
+export const ffxivMilestones = {
+    title: "ffxiv-milestones",
+    image: "/projects/ffxiv-milestones.png",
+    description: "Generates a timeline of milestones for a user's character in Final Fantasy XIV using scraped achievement data",
+    language: "TypeScript, Next.js, Sass, C#",
+    year: '2025',
+    url: "https://github.com/SamC95"
+}
+
 export const L2JClientDatabase = {
     title: "L2J Database",
     image: "/projects/l2j-client-db.png",
