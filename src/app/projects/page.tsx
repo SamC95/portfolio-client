@@ -16,7 +16,7 @@ import {
     MealDatabase,
     DiceGame,
     Portfolio,
-    ffxivMilestones
+    eorzeanMilestones
 } from './posts/projects'
 import ProjectContainer from "@/app/components/project-container/project-container";
 import '../components/project-container/project-container.sass'
@@ -32,11 +32,11 @@ export default function Projects() {
     }, [])
 
     const projects = [
-        ffxivMilestones,
         L2JClientDatabase,
         L2JServerAPI,
         MochiBot,
         NewsScraper,
+        eorzeanMilestones,
         Portfolio,
         NewsappKotlin,
         DigitalStore,

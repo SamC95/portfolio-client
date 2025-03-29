@@ -1,11 +1,11 @@
 const currentDate = new Date()
 const currentYear = currentDate.getFullYear()
 
-export const ffxivMilestones = {
-    title: "ffxiv-milestones",
+export const eorzeanMilestones = {
+    title: "eorzean-milestones",
     image: "/projects/ffxiv-milestones.png",
     description: "Generates a timeline of milestones for a user's character in Final Fantasy XIV using scraped achievement data",
-    language: "TypeScript, Next.js, Sass, C#",
+    language: "TypeScript, C#, Next.js, Sass",
     year: '2025',
     url: "https://github.com/SamC95"
 }
@@ -38,7 +38,7 @@ export const NewsappKotlin = {
 }
 
 export const MochiBot = {
-    title: "Mochi Bot",
+    title: "MochiBot",
     image: "/projects/mochibot.png",
     description: "Discord game news bot using Discord4J & MySQL",
     language: "Java",
@@ -49,7 +49,7 @@ export const MochiBot = {
 export const NewsScraper = {
     title: "Game News Scraper",
     image: "/projects/news-scraper.png",
-    description: "Web scraper for video game news & updates using Jsoup, designed for use with Mochi Bot",
+    description: "Web scraper for video game news & updates using Jsoup & Playwright, used with MochiBot project",
     language: "Java",
     year: `2024-${currentYear}`,
     url: "https://github.com/SamC95/news-scraper"
