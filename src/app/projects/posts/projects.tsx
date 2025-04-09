@@ -13,7 +13,7 @@ export const eorzeanMilestones = {
 export const L2JClientDatabase = {
     title: "L2J Database",
     image: "/projects/l2j-client-db.png",
-    description: "Co-development of a database website for L2J that utilises the server API project",
+    description: "Co-development of a database website for L2J that utilises the server API project. (Private Repository)",
     language: "TypeScript, Next.js, Bootstrap",
     year: `2024-${currentYear}`,
     url: "https://github.com/SamC95"
@@ -22,7 +22,7 @@ export const L2JClientDatabase = {
 export const L2JServerAPI = {
     title: "L2J Server API",
     image: "/projects/l2j-server-api.png",
-    description: "Co-development of an API for the Lineage II private server, L2J.",
+    description: "Co-development of an API for the Lineage II private server, L2J. (Private Repository)",
     language: "Java Spring Boot",
     year: `2024-${currentYear}`,
     url: "https://github.com/SamC95"
@@ -43,7 +43,7 @@ export const MochiBot = {
     description: "Discord game news bot using Discord4J & MySQL",
     language: "Java",
     year: `2024-${currentYear}`,
-    url: "https://github.com/SamC95"
+    url: "https://github.com/SamC95/mochi-bot"
 }
 
 export const NewsScraper = {

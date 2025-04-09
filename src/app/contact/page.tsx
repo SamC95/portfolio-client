@@ -53,7 +53,7 @@ export default function Contact() {
                         <Image src={GithubSVG} alt="GitHub Icon" width={50} height={50}/>
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/sam-clark-23451730b/"
+                        href="https://www.linkedin.com/in/sam-clark-software-dev/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`icon ${isLoaded ? 'fade-in delay-3' : ''}`}
