@@ -16,7 +16,8 @@ import {
     MealDatabase,
     DiceGame,
     Portfolio,
-    eorzeanMilestones
+    eorzeanMilestones,
+    employeeManagementSoftware
 } from './posts/projects'
 import ProjectContainer from "@/app/components/project-container/project-container";
 import '../components/project-container/project-container.sass'
@@ -32,6 +33,7 @@ export default function Projects() {
     }, [])
 
     const projects = [
+        employeeManagementSoftware,
         L2JClientDatabase,
         L2JServerAPI,
         MochiBot,

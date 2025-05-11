@@ -1,6 +1,15 @@
 const currentDate = new Date()
 const currentYear = currentDate.getFullYear()
 
+export const employeeManagementSoftware = {
+    title: "HR / Employee Software",
+    image: "/projects/employee-management-software.png",
+    description: "Full-stack HR and employee software with work rotas, holiday booking, payslips and a mobile app for clocking-in",
+    language: 'TypeScript, React, C#, Flutter',
+    year: '2025',
+    url: 'https://github.com/SamC95'
+}
+
 export const eorzeanMilestones = {
     title: "eorzean-milestones",
     image: "/projects/ffxiv-milestones.png",
